@@ -1,3 +1,5 @@
+Android application to manage cafe orders
+
 Account Admin:
 - username: maixuany
 - password: maixuany
