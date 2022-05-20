@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/img_statusmon_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_statusmon_backbtn"
+            android:fontFamily="@font/muli_black"
+            android:padding="10dp"
+            android:text="Danh Sách Món"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_statusmon_TenBan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/corner_border_black"
+            android:fontFamily="@font/muli_black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Bàn 1"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_statusmon_NgayDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/corner_border_black"
+            android:fontFamily="@font/muli_black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="20/12/2021"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvDisplayStatusMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numColumns="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingVertical="5dp"
+        >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_statusmon_doneall"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/corner_border_primary"
+        android:fontFamily="@font/muli_black"
+        android:padding="10dp"
+        android:text="Hoàn Thành tất cả"
+        android:textSize="20sp" />
+
+</LinearLayout>
